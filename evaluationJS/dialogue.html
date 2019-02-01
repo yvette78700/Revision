@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversation automatique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>Conversation</h1>
+
+    
+
+    <div class="pere">
+        <img src="img/pere.jpg" alt="pere">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="fils">
+        <img src="img/fils.jpg" alt="fils">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <button >Donne la parole </button>
+
+    <script type="text/javascript">
+
+        var parolepere = ["bonjour mon fils","A quel heure tu t'es couché hier ?","as tu revisé avant ?","pourquoi ?"];
+
+        var parolefils = ["bonjour papa","vers minuit","je n'es pas eu le temps","ma journée etait charger "];
+
+        //i pour parcourir le tableau
+
+
+        var i=0;
+       
+        var bouton = document.querySelector('button');
+
+        // donne la parole
+        var distributeur =parolepere[i];
+        
+        
+        // place du message
+        var position;
+        
+            bouton.addEventListener("click",dialogue);
+
+            function dialogue(){
+              
+                  if(distributeur===parolepere[i]){
+                      position=document.querySelectorAll(".pere ul li")[i];
+                      position.innerHTML =parolepere[i];
+                      distributeur =parolefils[i];
+                     
+
+                    
+                  }else{
+
+
+                position=document.querySelectorAll(".fils ul li")[i];
+                position.innerHTML =parolefils[i];
+               
+               
+                i++;
+                distributeur =parolepere[i];
+               
+              
+                  }
+
+                  if(i==parolefils.length){
+                    console.log(i);
+                      i=0;
+                  
+                  }
+                  
+        
+            };
+        
+
+       
+    </script>
+    
+</body>
+</html>

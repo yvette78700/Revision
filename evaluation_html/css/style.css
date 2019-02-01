@@ -1,0 +1,171 @@
+body,html{
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+
+}
+.container{
+width:70%;
+margin:20px auto;
+border:1px solid grey;
+box-shadow:0 0 1px 0px;
+border-radius: 5px;
+
+}
+/* entete */
+header{
+   display:flex;
+   justify-content: space-around;
+    background-color:#C55394;
+    color:white;
+    height:3em;
+   
+}
+
+header p{
+  margin:auto;
+margin-left:10px;
+}
+nav{
+    margin:auto;
+    margin-right:10px;
+
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:0 10px
+    
+    
+}
+nav a:hover{
+    background-color: #EB43A3;
+    padding:10px 5px;
+}
+/* le corps de la page */
+/* les titres */
+h4{
+    color: #C55394;
+    font-family: 'Courgette', cursive;
+    font-style: italic;
+    text-align: left;
+    padding-left: 5px;
+}
+
+h5{
+    color:#C55394;
+    font-style: italic;
+    font-family: 'Courgette', cursive;
+}
+h3{
+color:#C55394;
+font-family: 'Courgette', cursive;
+font-style: italic;
+
+background-repeat: no-repeat;
+
+position: relative;
+top:5em;
+
+
+}
+.arc{
+    width:600px;
+    height:95px;
+    margin:0 auto;
+    
+}
+.arc img{
+    width: 300px;
+    height: 150px;
+}
+
+.container p{
+    text-align: left;
+    padding:5px;
+}
+
+.conteneur{
+    width: 90%;
+    margin:auto;
+    background:url("../img/background.png");
+    text-align: center;
+   
+}
+
+
+/* image */
+
+.image1{
+margin:0 0 0 15px;
+
+padding:0;
+display: inline-block;
+width:23%;
+
+}
+.image1 p{
+    text-align: center;
+    background-color: black;
+    opacity:0.8;
+    color:white;
+    position: relative;
+    bottom:30px;
+    width:87%;
+    margin:auto;
+}
+
+.image1 img{
+    width:90%;
+}
+
+
+.iframe{
+    float: left;
+    width: 60%;
+
+}
+
+.adresse{
+    float: left;
+    width:35%;
+    text-align: left;
+
+}
+.clear{
+    clear: both;
+}
+
+.adresse p,address{
+    line-height:5px;
+
+}
+
+form> input{
+
+    padding:5px;
+}
+form input:last-child{
+    color:white;
+    background-color: #C55394;
+    border:1px solid #C55394;
+    border-radius: 5px;
+    display:block;
+    margin:5px;
+    padding: 5px 8px ;
+}
+
+/* pied de page  */
+
+footer{
+    background-color:#C55394;
+    color:white;
+    height:3em;
+    line-height: 3em;
+    text-align: right;
+    padding-right: 5px;
+}
+
+
+

@@ -1,0 +1,38 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.pere,.fils{
+display: inline-block;
+
+}
+
+.pere img{
+    
+    max-width:1000px;
+   
+}
+
+.fils img{
+    max-width:500px;
+
+}
+button{
+display: block;
+margin:5em auto;
+width: 20%;
+}
+
+.pere ul li,.fils ul li{
+    list-style: none;
+    font-size:200%;
+    color:blue;
+}
+.pere ul,.fils ul{
+    position: relative;
+
+   bottom:100px;
+}
+
